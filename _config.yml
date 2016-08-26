@@ -27,6 +27,7 @@ gitlab_link:      https://gitlab.com/jflournoy/
 # Build settings
 markdown: kramdown
 theme: minima
-highlight: rogue        
+highlight: rouge        
 
-exclude: [vendor, "Gemfile", "Gemfile.lock", "_posts/Render_Rmd_to_gitlab_io.R"]
+exclude: [vendor, "Gemfile", "Gemfile.lock"]
+include: [figs]        

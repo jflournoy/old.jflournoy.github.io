@@ -1,23 +1,28 @@
-baseurl: /tufte-jekyll 
-title: Tufte
-subtitle: Content-centric blogging
-author: clay harmon
+baseurl: "" 
+url: "http://jflournoy.gitlab.io" # the base hostname & protocol for your site
+title: John C. Flournoy 
+subtitle: Estimating uncertainty
+author: John C. Flournoy
 simple_search: http://google.com/search
-description: A Jekyll theme for content-rich sites
-name: tufte
+description: > # this means to ignore newlines until "baseurl:"
+        John is a PhD student at the University of Oregon studying 
+        developmental neuroscience and personality. 
+name: jcf
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlight: rouge        
 permalink: /articles/:short_year/:title
-timezone: America/New_York
+timezone: America/Los_Angeles
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
+exclude: [vendor, 'Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
+include: [figs]        
 post:
   template: _post.txt
   extension: md
 page:
   template: _page.txt
   extension: md
-editor: gvim
+editor: vim
 git:
   branch: master
 transfer:

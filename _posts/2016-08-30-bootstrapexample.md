@@ -36,7 +36,7 @@ qplot(small_sample)
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![plot of chunk unnamed-chunk-1](/flournoy/images/boot-unnamed-chunk-1-1.svg) 
+![plot of chunk unnamed-chunk-1](/../figs/bootstrapexample/boot-unnamed-chunk-1-1.svg) 
 
 ```r
 (allSamples<-data.frame(values=small_sample,
@@ -118,7 +118,7 @@ We can check to see what these replicates look like using `geom_density` from `g
 ggplot(allSamples[1:(N*20),],aes(x=values))+facet_wrap(~data_source)+geom_density()
 ```
 
-![plot of chunk unnamed-chunk-2](/flournoy/images/boot-unnamed-chunk-2-1.svg) 
+![plot of chunk unnamed-chunk-2](/../figs/bootstrapexample/boot-unnamed-chunk-2-1.svg) 
 
 Or more traditionally, we can use `geom_histogram`:
 
@@ -127,7 +127,7 @@ Or more traditionally, we can use `geom_histogram`:
 ggplot(allSamples[1:(N*20),],aes(x=values))+facet_wrap(~data_source)+geom_histogram(binwidth=.05)
 ```
 
-![plot of chunk unnamed-chunk-3](/flournoy/images/boot-unnamed-chunk-3-1.svg) 
+![plot of chunk unnamed-chunk-3](/../figs/bootstrapexample/boot-unnamed-chunk-3-1.svg) 
 
 We can learn something about the structure of our sample by resampling in this way, and this saves us from
 needing to make an assumption about the distribution of the sample. 
@@ -169,7 +169,7 @@ qplot(resampledMeans)
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![plot of chunk unnamed-chunk-4](/flournoy/images/boot-unnamed-chunk-4-1.svg) 
+![plot of chunk unnamed-chunk-4](/../figs/bootstrapexample/boot-unnamed-chunk-4-1.svg) 
 
 Our actual observed mean is:
 
@@ -625,7 +625,7 @@ qplot(boot.rezzies$t)
 ## Warning: position_stack requires constant width: output may be incorrect
 ```
 
-![plot of chunk unnamed-chunk-20](/flournoy/images/boot-unnamed-chunk-20-1.svg) 
+![plot of chunk unnamed-chunk-20](/../figs/bootstrapexample/boot-unnamed-chunk-20-1.svg) 
 
 ```r
 boot.ci(boot.rezzies)
@@ -673,13 +673,13 @@ str(iris)
 qplot(iris$Sepal.Length,iris$Petal.Length)
 ```
 
-![plot of chunk unnamed-chunk-21](/flournoy/images/boot-unnamed-chunk-21-1.svg) 
+![plot of chunk unnamed-chunk-21](/../figs/bootstrapexample/boot-unnamed-chunk-21-1.svg) 
 
 ```r
 qplot(iris$Sepal.Length,iris$Petal.Width)
 ```
 
-![plot of chunk unnamed-chunk-21](/flournoy/images/boot-unnamed-chunk-21-2.svg) 
+![plot of chunk unnamed-chunk-21](/../figs/bootstrapexample/boot-unnamed-chunk-21-2.svg) 
 
 ```r
 summary(lm(Sepal.Length~Petal.Length+Petal.Width,iris))

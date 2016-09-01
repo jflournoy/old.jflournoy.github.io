@@ -5,7 +5,7 @@ subtitle: Estimating uncertainty
 author: John C. Flournoy
 simple_search: http://google.com/search
 description: > # this means to ignore newlines until "baseurl:"
-        John is a PhD student at the University of Oregon studying 
+        PhD student at the University of Oregon studying 
         developmental neuroscience and personality. 
 name: jcf
 markdown: kramdown

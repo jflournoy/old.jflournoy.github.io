@@ -11,7 +11,7 @@ name: jcf
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlight: rouge        
-permalink: /articles/:short_year/:title.html
+permalink: pretty
 timezone: America/Los_Angeles
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: [vendor, 'Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']

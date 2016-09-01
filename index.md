@@ -1,8 +1,11 @@
 ---
 layout: full-width
-title: home
+title: about
 ---
 
 # {{ site.author }}
 
-{{ site.description }}
+## {{ site.description }}
+
+{{ site.longerdescription }}
+

@@ -3,7 +3,8 @@ layout: full-width
 title: Blog
 ---
 
-  <h1 class="content-listing-header sans">Snippets, with explanation</h1>
+  <h1 class="content-listing-header sans">Usually R snippets, with explanation</h1>
+  I also post over at the <a href='http://blogs.uoregon.edu/rclub/author/flournoy-2/'>R Club blog</a>.
   <ul class="content-listing ">
     {% for post in site.posts %}      
         <li class="listing">

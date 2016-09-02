@@ -4,12 +4,8 @@ title: John C. Flournoy
 subtitle: Estimating uncertainty
 author: John C. Flournoy
 simple_search: http://google.com/search
-description: > # this means to ignore newlines until "baseurl:"
-        University of Oregon <br />
-        PhD student, Department of Psychology <br />
-        Prevention Science Institute <br />
-        Center for Translational Neuroscience
 name: jcf
+description: "Academic website for John Flournoy"        
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlight: rouge        
@@ -17,7 +13,7 @@ permalink: pretty
 timezone: America/Los_Angeles
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: [vendor, 'Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
-include: [figs]        
+include: [figs, cv]        
 post:
   template: _post.txt
   extension: md

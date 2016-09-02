@@ -5,12 +5,10 @@ subtitle: Estimating uncertainty
 author: John C. Flournoy
 simple_search: http://google.com/search
 description: > # this means to ignore newlines until "baseurl:"
-        PhD student at the University of Oregon studying 
-        developmental neuroscience and personality. 
-longerdescription: >
-        Broadly, my work focusses on the development of individual differences and their consequences. Specifically, I focus on decision making and social motivation during adolescence, and lifespan development of personality. I take a modeling approach to these problems, which requires deep consideration and sophisticated modeling of the processes that give rise to observed behavior. This has led me to embrace a range of methods that allow flexible modeling, such as multi-level modeling, Bayesian modeling, structural equation modeling, machine learning, and network analysis. 
-
-        Ongoing projects related to adolescent development include cognitive modeling of decision making and learning in multiple contexts, evaluation of the structure of developmental trends, and meta-analysis of neuroimaging literature about reactivity and control processes. In personality development, I am taking a network approach to lifespan longitudinal data. 
+        University of Oregon <br />
+        PhD student, Department of Psychology <br />
+        Prevention Science Institute <br />
+        Center for Translational Neuroscience
 name: jcf
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"

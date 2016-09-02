@@ -3,7 +3,7 @@ layout: full-width
 title: Blog
 ---
 
-  <h1 class="content-listing-header sans">Articles</h1>
+  <h1 class="content-listing-header sans">Snippets, with explanation</h1>
   <ul class="content-listing ">
     {% for post in site.posts %}      
         <li class="listing">

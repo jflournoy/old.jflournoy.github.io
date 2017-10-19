@@ -1,5 +1,5 @@
 baseurl: "" 
-url: "http://jflournoy.github.io" # the base hostname & protocol for your site
+url: "https://jflournoy.github.io" # the base hostname & protocol for your site
 title: John C. Flournoy 
 subtitle: Estimating uncertainty
 author: John C. Flournoy

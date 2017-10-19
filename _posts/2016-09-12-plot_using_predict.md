@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Plotting using `predict`'
 date: 2016-09-12 
 ---

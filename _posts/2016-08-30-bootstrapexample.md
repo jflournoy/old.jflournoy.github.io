@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Intro to Bootstrapping"
 date: 2014-11-14 15:30:00 -0700
 categories: R tutorials

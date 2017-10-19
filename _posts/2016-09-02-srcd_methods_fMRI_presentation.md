@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Using fMRI to study child and adolescent development
 date: 2014-09-11
 category: Presentations

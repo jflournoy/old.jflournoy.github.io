@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Power to detect mediation and other problems'
 date: 2016-09-02 
 ---

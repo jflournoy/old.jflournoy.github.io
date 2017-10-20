@@ -14,6 +14,7 @@ timezone: America/Los_Angeles
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: [vendor, 'Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
 include: [figs, cv]        
+gems: ['jekyll/scholar']
 post:
   template: _post.txt
   extension: md

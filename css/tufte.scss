@@ -142,8 +142,8 @@ blockquote footer { width: 45%;
         letter-spacing: .03em; }
 
 pre, pre code, p code, p pre code { font-family: $code-font;  // removed .code 'class' since code is an actual html tag
-        font-size: 1.2rem;                   // also added p code, p pre code and pre selector to account for Markdown parsing
-        line-height: 1.71428571;        // of triple backticks plus rationalized line-heights and margins
+        font-size: .9em;                   // also added p code, p pre code and pre selector to account for Markdown parsing
+        line-height: 1.41428571;        // of triple backticks plus rationalized line-heights and margins
         margin-top: 1.71428571rem; }
 
 
@@ -286,7 +286,7 @@ div.table-wrapper { overflow-x: auto; } //changed all overflow values to 'auto' 
 
 .marginnote code, .sidenote code { font-size: 1rem; } //more .code class removal
 
-pre, p pre { width: 52.5%;
+pre, p pre { 
            padding-left: 2.5%;
            overflow-x: auto; }
 

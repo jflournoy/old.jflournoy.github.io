@@ -39,10 +39,21 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
+    bibtex-ruby (4.4.4)
+      latex-decode (~> 0.0)
     builder (3.2.3)
+    citeproc (1.0.5)
+      namae (~> 0.8)
+    citeproc-ruby (1.1.7)
+      citeproc (>= 1.0.4, < 2.0)
+      csl (~> 1.4)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
     crass (1.0.2)
+    csl (1.4.5)
+      namae (~> 0.7)
+    csl-styles (1.0.1.8)
+      csl (~> 1.0)
     erubi (1.7.0)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
@@ -62,9 +73,16 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
+    jekyll-scholar (5.10.2)
+      bibtex-ruby (~> 4.0, >= 4.0.13)
+      citeproc-ruby (~> 1.0)
+      csl-styles (~> 1.0)
+      jekyll (~> 3.0)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.15.0)
+    latex-decode (0.2.2)
+      unicode (~> 0.4)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -81,6 +99,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
+    namae (0.11.3)
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -135,6 +154,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    unicode (0.4.4.4)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -144,6 +164,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.2.1)
+  jekyll-scholar
   rails
   redcarpet
   rouge
@@ -152,4 +173,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.3

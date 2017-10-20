@@ -15,6 +15,7 @@ gem "jekyll", "3.2.1"
 gem "rouge"
 gem "redcarpet"
 gem "rails"
+gem "jekyll-scholar"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

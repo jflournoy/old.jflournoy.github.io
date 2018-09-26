@@ -4,7 +4,7 @@ title: Blog
 ---
 
   <h1 class="content-listing-header sans">Usually R snippets, with explanation</h1>
-  <p>Many of these are from <a href="http://github.com/jflournoy/misc-r-projects/">this github repo</a>. I also post over at the <a href='http://blogs.uoregon.edu/rclub/author/flournoy-2/'>R Club blog</a>.</p>
+  <p>Much of the code for these posts can also be found in <a href="http://github.com/jflournoy/misc-r-projects/">this github repo</a>.</p>
   <ul class="content-listing ">
     {% for post in site.posts %}      
         <li class="listing">

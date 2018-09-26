@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "The RI-CLPM in OpenMX"
+title: "The RI-CLPM in OpenMx"
 author: "John Flournoy"
 date: "September 26, 2018"
 output: 
@@ -19,18 +19,18 @@ As a reminder, the model looks like this:
 
 ![RI-CLPM Diagram](/../figs/riclpm-lavaan-demo/hamaker-diagram.png)
 
-# Implemmenting the RI-CLPM in R
+# The packages
 
 
 ```r
 #if you need to install anything, uncomment the below install lines for now
-#install.packages('lavaan')
+#install.packages('OpenMx')
 #install.packages('tidyverse')
 require(OpenMx)
 require(tidyverse)
 ```
 
-## Some data
+# Some data: a reminder
 
 I'll use the same data from before, which was presented on at a methods symposium at SRCD in 1997. Supporting documentation can be found [in this pdf]({{ "/assets/pdf/srcdmeth.pdf" | absolute_url }}). Data and code for importing it was helpfully provided by [Sanjay Srivastava](http://twitter.com/hardsci).
 
@@ -113,12 +113,14 @@ antireadLong %>%
 
 ![center](/../figs/riclpm-openmx-demo/Variables over time-1.png)
 
-## Fitting a RI-CLPM in OpenMx
+# Fitting a RI-CLPM in OpenMx
 
 
-Below is the code to specify and fit the RI-CLPM with equality constraints (in lavaan [here](https://jflournoy.github.io/2017/10/20/riclpm-lavaan-demo/#adding-constraints-to-ri-clpm)) on the autoregressive, cross-lagged, and residual (for wave 2 and 3) paths. 
+Below is the code to specify and fit the RI-CLPM with equality constraints on the autoregressive, cross-lagged, and residual (for wave 2 and 3) paths (see this in lavaan [*here*](https://jflournoy.github.io/2017/10/20/riclpm-lavaan-demo/#adding-constraints-to-ri-clpm)). 
 
-If you're not familiar with OpenMx syntax, but you know what a latent growth curve model looks like, check out the [OpenMx LGCM example](https://vipbg.vcu.edu/vipbg/OpenMx2/docs//OpenMx/latest/TimeSeries_Path.html). You construct your model using a series of functions to create each element. Note that OpenMx likes everything to be very explicit, which can be a good thing. You should think about and specify reasonable starting values, and you should be prepared to put bounds on variables that have them (e.g., variances shouldn't be negative). I'll call these out as they come up. Also, a lot of the functionality is specified through path labels, and so I'll introduce some shorthand to create labels with similar or identical names.
+If you're not familiar with OpenMx syntax, but you know what a latent growth curve model looks like, check out the [OpenMx LGCM example](https://vipbg.vcu.edu/vipbg/OpenMx2/docs//OpenMx/latest/TimeSeries_Path.html). You construct your model using a series of functions to create each element. Note that OpenMx likes everything to be very explicit, which can be a good thing. You should think about and specify reasonable starting values, and you should be prepared to put bounds on variables that have them (e.g., variances shouldn't be negative). I'll call these out as they come up. Also, equality constraints are achieved through the use of path labels, and so I'll introduce some shorthand to create labels with similar or identical names.
+
+## Data specification
 
 
 ```r
@@ -137,6 +139,8 @@ latentResY <- c('q1', 'q2', 'q3')
 ```
 
 The above is just to be able to have single variables that contain all the manifest and latent variables I will be using for each construct. Note that these are _all_ the manifests, but not all the latents.
+
+## Latent intercepts
 
 
 ```r
@@ -170,12 +174,14 @@ latentInterceptVars <- mxPath(from = c('kappa', 'omega'), arrows = 2,
 
 This creates free variance and covariance paths between the random intercepts. The 'unique.pairs' option will generate a path between each unique combination of the names you use in the "from" parameter. Giving them labels will help you identify them in the output, but are otherwise not strictly necessary. Note that the starting values are set with variances at 1, and the covariance at 0 (because it could be positive or negative), and lower bounds are set on the variance parameters.  
 
+## Mean structure
+
 
 ```r
 meanPathNames <- unlist(lapply(c('mu', 'pi'), paste, 1:3, sep = ''))
 ```
 
-Instead of writing out each of the path labels for the means of each manifest variable, so I call the above. It's more characters than just writing it out, but maybe less prone to typos.
+Instead of writing out each of the path labels for the means of each manifest variable, I call the above. It's more characters than just writing it out, but maybe less prone to typos.
 
 
 ```r
@@ -186,6 +192,8 @@ intercepts <- mxPath(from = "one", to = c(manifestsX, manifestsY),
 ```
 
 The name "one" is reserved to refer to the intercept, and we allow the paths to be estimated freely, labeled with the names created above. It's probably not necessary to set starting values here, but I glanced at the histograms above and gave it my best guess, just in case.
+
+## Latent temporal deviations
 
 
 ```r
@@ -235,7 +243,9 @@ print(lagPaths)
 ## q2 -> p3 [value=0, free=TRUE, label='beta']
 ```
 
-These calls establish the paths between the latent residuals. In the first call the first two latent variables for X and Y are connected to the second two. In the second, call, the first two X and Y variables are connected to the second two Y and X variables, respectively, to establish the lagged relations. **Paths with the same labels are constrained to equality**, which is why these paths have the labels assigned as they do. The starting values are based on the expectation that the autoregressive relation is probably positive.
+These calls establish the paths between the latent residuals. In the first call (that creates the `arPaths` variable) the first two latent variables for X and Y are connected to the second two. In the second call (that creates the `lagPaths` variable), the first two X and Y variables are connected to the second two Y and X variables, respectively, to establish the lagged relations. **Paths with the same labels are constrained to equality**, which is why these paths have the labels assigned as they do. The starting values are based on the expectation that the autoregressive paths are probably positive.
+
+## Residual variance structure
 
 
 ```r
@@ -255,7 +265,9 @@ resCovar <- mxPath(from = latentResX,
                    value = 0)
 ```
 
-Finally, the residuals have to be specified. Any path left unspecified will not be included in the model -- unlike `lavaan`, `OpenMx` doesn't assume anything about your model. Note that the code `paste0(c(rep('u',3), rep ('v',3)), c('1', '', ''))` results in the labels: u1, u, u, v1, v, v. These labels constrain the residuals (or disturbances) from wave 2 and 3 to be equal, with those from wave 1 estimated freely. The bivariate covariance is similarly constrained via the labels generated by `paste0(rep ('rescovar',3), c('1', '', ''))`: rescovar1, rescovar, rescovar. Again, the 'value' and 'lbound' options are set to a reasonable values for the variance. The starting value for the covariances is also set explicitly, though `0` is the default.
+Finally, the residuals have to be specified. Any path left unspecified will not be included in the model -- unlike `lavaan`, `OpenMx` doesn't assume anything about your model. Note that the code `paste0(c(rep('u',3), rep ('v',3)), c('1', '', ''))` results in the labels: u1, u, u, v1, v, v. These labels constrain the residuals (or disturbances) from wave 2 and 3 to be equal, with those from wave 1 estimated freely. The bivariate covariance is similarly constrained via the labels generated by `paste0(rep ('rescovar',3), c('1', '', ''))`: rescovar1, rescovar, rescovar. Again, the 'value' and 'lbound' options are set to a reasonable value for the variances. The starting value for the covariances is also set explicitly, though `0` is the default.
+
+## Fitting the model and viewing output
 
 
 ```r
@@ -275,7 +287,7 @@ riclpm <- mxModel('RICLPM', type = 'RAM',
                   resCovar)
 ```
 
-This call actually puts everything together, translating the path specification into estimable matrices. The first argument is the model name (whatever you wish to call it). After that, you must specify all manifest and latent variables that appear in the path specifications (except for "one"). The rest of the call includes all of the model constructors we generated in the above code (including the data specification).
+This call actually puts everything together, translating the path specification into estimable matrices. The first argument is the model name (whatever you wish to call it). After that, you must specify all manifest and latent variables that appear in the path specifications (except for "one"). The rest of the call includes all of the path constructors we generated in the above code (including the data specification).
 
 
 ```r
@@ -331,8 +343,8 @@ summary(riclpm_fit)
 ## AIC:       2558.158               6820.158                 6822.132
 ## BIC:      -5898.052               6896.231                 6835.942
 ## To get additional fit indices, see help(mxRefModels)
-## timestamp: 2018-09-26 14:52:57 
-## Wall clock time: 0.1642199 secs 
+## timestamp: 2018-09-26 17:22:28 
+## Wall clock time: 0.1292243 secs 
 ## optimizer:  CSOLNP 
 ## OpenMx version number: 2.9.6 
 ## Need help?  See help(mxSummary)
@@ -434,8 +446,8 @@ summary(riclpm_uc_fit <- mxRun(riclpm_uc))
 ## AIC:       2552.106               6814.106                 6817.821
 ## BIC:      -5876.076               6918.207                 6835.706
 ## To get additional fit indices, see help(mxRefModels)
-## timestamp: 2018-09-26 14:52:57 
-## Wall clock time: 0.2500031 secs 
+## timestamp: 2018-09-26 17:22:28 
+## Wall clock time: 0.2689583 secs 
 ## optimizer:  CSOLNP 
 ## OpenMx version number: 2.9.6 
 ## Need help?  See help(mxSummary)
@@ -510,8 +522,8 @@ summary(riclpm_uc_fit)
 ## AIC:       2552.106               6814.106                 6817.821
 ## BIC:      -5876.076               6918.207                 6835.706
 ## To get additional fit indices, see help(mxRefModels)
-## timestamp: 2018-09-26 14:52:57 
-## Wall clock time: 0.2500031 secs 
+## timestamp: 2018-09-26 17:22:28 
+## Wall clock time: 0.2689583 secs 
 ## optimizer:  CSOLNP 
 ## OpenMx version number: 2.9.6 
 ## Need help?  See help(mxSummary)
@@ -593,7 +605,7 @@ mxStandardizeRAMpaths(riclpm_fit, SE = T)
 ## 32  1.00000000 2.268831e-12
 ```
 
-## Plotting model fit
+## Plotting model expectations 
 
 There are just a couple of changes to the code from the previous post having to do with how we extract information from the fitted model.
 

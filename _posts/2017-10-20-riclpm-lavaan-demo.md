@@ -9,6 +9,13 @@ output:
     toc: true
 ---
 
+_Update, 2019-11-11:_ There are a couple of new bits of code online that could be helpful if you are interested in these models.
+
+1. I wrote an R package called [`riclpmr`](https://github.com/jflournoy/riclpmr) that will `lavaan` generate syntax for multivariate RI-CLPMs (and also provides the proper call to `lavaan` for estimating it).
+2. Christoph Nhuyen ([@cgnguyen_online](https://twitter.com/cgnguyen_online)) wrote a [function to generate graphs](https://github.com/cgnguyen/cross_lag_plot) (path diagrams) for displaying the results from these models.
+
+------
+
 This walk-through explains, briefly, why and how to run a RI-CLPM in R.
 
 # Critique of cross-lagged pannel models

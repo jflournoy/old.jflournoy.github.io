@@ -5,7 +5,11 @@ title: About
 
 # {{ site.author }} 
 
-{% marginnote "affiliations" "Harvard University<br />Postdoctoral fellow<br /><a href='https://sdlab.fas.harvard.edu/'>Stress and Development Lab</a><br /><br /><em>Past</em><br /><small><a href='http://dsn.uoregon.edu/'>Developmental Social Neuroscience Lab</a><br /><a href='http://psdlab.uoregon.edu/'>Personality and Social Dynamics Lab</a><br /><a href='http://blogs.uoregon.edu/rclub/'>R Club</a><br /><a href='http://psi.uoregon.edu/'>Prevention Science Institute</a><br /><a href='http://ctn.uoregon.edu/'>Center for Translational Neuroscience</a><br /><a href='http://llandlab.stanford.edu/'>Lifespan approaches to Neuropsychiatric Disorders Lab</a></small>"  %}
+{% marginnote "affiliations" "<em>Affiliations</em><br/>Harvard University<br />Postdoctoral fellow<br /><a href='https://sdlab.fas.harvard.edu/'>Stress and Development Lab</a>" %}
+
+{% marginnote "past" "<em>Past affiliations</em><br /><small><a href='http://dsn.uoregon.edu/'>Developmental Social Neuroscience Lab</a><br /><a href='http://psdlab.uoregon.edu/'>Personality and Social Dynamics Lab</a><br /><a href='http://blogs.uoregon.edu/rclub/'>R Club</a><br /><a href='http://psi.uoregon.edu/'>Prevention Science Institute</a><br /><a href='http://ctn.uoregon.edu/'>Center for Translational Neuroscience</a><br /><a href='http://llandlab.stanford.edu/'>Lifespan approaches to Neuropsychiatric Disorders Lab</a></small>"  %}
+
+{% marginnote "twitter" "<a class='twitter-timeline' data-width='250' data-height='400' data-theme='light' href='https://twitter.com/flourneuro?ref_src=twsrc%5Etfw'>Tweets by flourneuro</a> <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>" %}
 
 I'm currently a postdoc with Kate McLaughlin's Stress and Development lab at Harvard University. I came here by way of the PhD program at the University of Oregon, and a BA at the University of California, Berkeley. My academic life has been grounded in supportive and productive collaborations with folks you can meet if you follow some of these links.
 

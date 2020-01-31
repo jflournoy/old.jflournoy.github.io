@@ -7,7 +7,7 @@ title: Publications
 
 1. <a href="#pre-publication">Pre-publication</a>
 2. <a href="#journal-articles">Journal articles</a>
-3. <a href="#miscelaneous-contributions">Miscelaneous Contributions</a>
+3. <a href="#miscellaneous-contributions">Miscellaneous Contributions</a>
 
 {% marginnote "updated" "<small><em>Updated 2019&ndash;01&ndash;15; see [Google Scholar](https://scholar.google.com/citations?user=ZzQlngkAAAAJ&hl=en&oi=ao) for most up to date list.</em></small>" %}{% newthought "Descriptions of notable contributions" %} to each publication appear as sidenotes in the margins. Many contain links (&#8599;) to relevant github repositories. 
 
@@ -140,9 +140,14 @@ and Successful Aging in Older Adults. *American Journal of Geriatric
 Psych*.
 [10.1097/JGP.0b013e31823e2d03](http://doi.org/10.1097/JGP.0b013e31823e2d03)
 
-# Miscelaneous contributions
+# Miscellaneous contributions
 
 Tutorials on developmental fMRI at [Modeling Developmental Change workshop](https://osf.io/hym23/), Portland, OR (2017).
+
+Data:
+
+>**Flournoy, J. C.**, & Levernier, J.{% sidenote "joint3" "Joint first authorship" %} (2020). Gender parity in medical authorship (Version 1). figshare. 
+[10.6084/m9.figshare.7889648.v1](https://doi.org/10.6084/m9.figshare.7889648.v1){% sidenote "genderdata" "[Analysis&#8599;](https://jflournoy.github.io/gender-in-medical-authorship/gender_parity.html), [Analysis code&#8599;](https://github.com/jflournoy/gender-in-medical-authorship), [Data collection code&#8599;](https://bitbucket.org/jlev_uo/ucla-pubmed-gender-bias)" %}
 
 Selected Posters:
 

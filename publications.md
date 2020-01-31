@@ -142,7 +142,11 @@ Psych*.
 
 # Miscellaneous contributions
 
-Tutorials on developmental fMRI at [Modeling Developmental Change workshop](https://osf.io/hym23/), Portland, OR (2017).
+{% marginnote "talks" "*For all talks and posters, see my CV*" %}
+
+Presentations:
+
+>Tutorials on developmental fMRI at [Modeling Developmental Change workshop](https://osf.io/hym23/), Portland, OR (2017).
 
 Data:
 

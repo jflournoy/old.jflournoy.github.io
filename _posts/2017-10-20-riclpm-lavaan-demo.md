@@ -18,6 +18,8 @@ _Update, 2019-11-11:_ There are a couple of new bits of code online that could b
 
 This walk-through explains, briefly, why and how to run a RI-CLPM in R.
 
+_All code and data are available [in the github repository](https://github.com/jflournoy/misc-r-projects/tree/master/lavaan_ri-clpm)_
+
 # Critique of cross-lagged pannel models
 
 This post summarizes critiques of the traditional cross-lagged panel model (CLPM), and an improved model by Hamaker, Kuiper, and Grasman {% cite hamaker_critique_2015 -A %}.

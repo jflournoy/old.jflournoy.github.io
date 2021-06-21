@@ -13,42 +13,41 @@ title: Publications
 
 # Pre-publication
 
->Nook, E. C., **Flournoy, J. C.**, Rodman, A. M., Mair, P., & McLaughlin, K. A. (2020). High emotion differentiation buffers against internalizing symptoms following exposure to stressful life events in adolescence: An intensive longitudinal study. PsyArXiv. [10.31234/osf.io/q4uy8](https://doi.org/10.31234/osf.io/q4uy8)
-
->Andrews, J. L., Mills, K. L., **Flournoy, J. C.**, Flannery, J.,
-Mobasser, A., Ross, G., ... Pfeifer, J. H. (2019). Rethinking adolescent
-risk-taking: Perception of social risk impacts expected involvement in
-health-risk behaviour during adolescence.
-[10.31234/osf.io/3rqeb](https://doi.org/10.31234/osf.io/3rqeb)
+>Nelson, B., Flannery, J., Duell, N., **Flournoy, J.**, Prinstein, M. J., & Telzer, E. (2021). Concurrent and Prospective Associations Between Fitbit Derived RDoC Arousal and Regulation Constructs and Adolescent Internalizing Symptoms. PsyArXiv. [10.31234/osf.io/wvpt2](https://doi.org/10.31234/osf.io/wvpt2)
 
 >Byrne, M. L., Chavez, S., Vijayakumar, N., Cheng, T. W., **Flournoy, J.
-C.**, Barendse, M., ... Pfeifer, J. H. (2019, July 3). Multi-method
+C.**, Barendse, M., ... Pfeifer, J. H. (2019). Multi-method
 confirmatory factor analyses of puberty in early adolescent girls{% sidenote "cfa-puberty" "Consulted on the analysis plan and inference from confirmatory factor models." %}.
 [10.31234/osf.io/pue6f](https://doi.org/10.31234/osf.io/pue6f)
-
->**Flournoy, J. C.**, Vijayakumar, N., Cheng, T. W., Cosme, D., Flannery, J., & Pfeifer, J. H. (2019). Improving Practices and Inferences in Developmental Cognitive Neuroscience. PsyArXiv. [10.31234/osf.io/ez5sf](https://doi.org/10.31234/osf.io/ez5sf)
-
->Vijayakumar, N., **Flournoy, J. C.**, Mills, K. L., Cheng, T. W.,
-Mobasser, A., Flannery, J., Allen, N. B., & Pfeifer, J. H. (2019).
-Getting to know me better: An fMRI study of intimate and superficial
-self-disclosure to friends during adolescence.
-[10.31234/osf.io/h8gkc](https://doi.org/10.31234/osf.io/h8gkc)
 
 >Vijayakumar, N., Shirtcliff, E., Byrne, M. L., Mills, K. L., Cheng, T.
 W., Mobasser, A., ... Pfeifer, J. H. (2019). Pubertal hormones and brain
 structure: Exploring the value of hair assays.
 [10.31234/osf.io/btf4y](https://doi.org/10.31234/osf.io/btf4y)
 
-
 # Journal articles
+
+>Gau, R., Noble, S., Heuer, K., Bottenhorn, K. L., Bilgin, I. P., Yang, Y.-F., Huntenburg, J. M., Bayer, J. M. M., Bethlehem, R. A. I., Rhoads, S. A., Vogelbacher, C., Borghesani, V., Levitis, E., Wang, H.-T., Van Den Bossche, S., Kobeleva, X., Legarreta, J. H., Guay, S., Atay, S. M., ... **Flournoy, J. C.**, ... Zuo, X.-N. (2021). Brainhack: Developing a culture of open, inclusive, community-driven neuroscience. *Neuron*. [10.1016/j.neuron.2021.04.001](https://doi.org/10.1016/j.neuron.2021.04.001)
+
+>Nook, E. C., **Flournoy, J. C.**, Rodman, A. M., Mair, P., & McLaughlin, K. A. (2021). High Emotion Differentiation Buffers Against Internalizing Symptoms Following Exposure to Stressful Life Events in Adolescence: An Intensive Longitudinal Study. *Clinical Psychological Science*. [10.1177/2167702620979786](https://doi.org/10.1177/2167702620979786)
+
+>Rodman, A. M., Vidal Bustamante, C. M., Dennison, M. J., **Flournoy, J. C.**, Coppersmith, D. D. L., Nook, E. C., Worthington, S., Mair, P., & McLaughlin, K. A. (2021). A Year in the Social Life of a Teenager: Within-Persons Fluctuations in Stress, Phone Communication, and Anxiety and Depression. *Clinical Psychological Science*. [10.1177/2167702621991804](https://doi.org/10.1177/2167702621991804)
+
+>Andrews, J. L., Mills, K. L., **Flournoy, J. C.**, Flannery, J. E., Mobasser, A., Ross, G., Durnin, M., Peake, S., Fisher, P. A., & Pfeifer, J. H. (2020). Expectations of Social Consequences Impact Anticipated Involvement in Health-Risk Behavior During Adolescence. *Journal of Research on Adolescence*, 30(4), 1008–1024. [10.1111/jora.12576](https://doi.org/10.1111/jora.12576)
 
 >Barendse, M. E. A., Cosme, D., **Flournoy, J. C.**, Vijayakumar, N., Cheng, T. W., Allen, N. B., & Pfeifer, J. H. (2020). Neural correlates of self-evaluation in relation to age and pubertal development in early adolescent girls. *Developmental Cognitive Neuroscience*,  44, 100799. [10.1016/j.dcn.2020.100799](https://doi.org/10.1016/j.dcn.2020.100799)
 
 >Barendse, M. E. A., Vijayakumar, N., Byrne, M. L., Flannery, J. E., Cheng, T. W., **Flournoy, J. C.**, Nelson, B. W., Cosme, D., Mobasser, A., Chavez, S. J., Hval, L., Brady, B., Nadel, H., Helzer, A., Shirtcliff, E. A., Allen, N. B., & Pfeifer, J. H. (2020). Study Protocol: Transitions in Adolescent Girls (TAG). *Frontiers in Psychiatry*, 10. [10.3389/fpsyt.2019.01018](https://doi.org/10.3389/fpsyt.2019.01018)
 
->Bustamante, C. M. V., Rodman, A. M., Dennison, M. J., **Flournoy, J. C.**, Mair, P., & McLaughlin, K. A. (2020). Within-person fluctuations in stressful life events, sleep, and anxiety and depression symptoms during adolescence: A multiwave prospective study. *Journal of Child Psychology and Psychiatry*.  [10.1111/jcpp.13234](https://doi.org/10.1111/jcpp.13234).
-
 >Cheng, T. W., Vijayakumar, N., **Flournoy, J. C.**, Op de Macks, Z., Peake, S. J., Flannery, J. E., Mobasser, A., Alberti, S. L., Fisher, P. A., & Pfeifer, J. H. (2020). Feeling left out or just surprised? Neural correlates of social exclusion and overinclusion in adolescence. *Cognitive, Affective, & Behavioral Neuroscience*, 20(2), 340–355. [10.3758/s13415-020-00772-x](https://doi.org/10.3758/s13415-020-00772-x)
+
+>**Flournoy, J. C.**, Vijayakumar, N., Cheng, T. W., Cosme, D., Flannery, J. E., & Pfeifer, J. H. (2020). Improving practices and inferences in developmental cognitive neuroscience. *Developmental Cognitive Neuroscience*, 45, 100807. [10.1016/j.dcn.2020.100807](https://doi.org/10.1016/j.dcn.2020.100807)
+
+>Hughes, B. T., **Flournoy, J. C.**, & Srivastava, S. (2020). Is perceived similarity more than assumed similarity? An interpersonal path to seeing similarity between self and others. *Journal of Personality and Social Psychology*. [10.1037/pspp0000369](https://doi.org/10.1037/pspp0000369)
+
+>Vidal Bustamante, C. M., Rodman, A. M., Dennison, M. J., **Flournoy, J. C.**, Mair, P., & McLaughlin, K. A. (2020). Within-person fluctuations in stressful life events, sleep, and anxiety and depression symptoms during adolescence: A multiwave prospective study. *Journal of Child Psychology and Psychiatry*.  [10.1111/jcpp.13234](https://doi.org/10.1111/jcpp.13234).
+
+>Vijayakumar, N., **Flournoy, J. C.**, Mills, K. L., Cheng, T. W., Mobasser, A., Flannery, J. E., Allen, N. B., & Pfeifer, J. H. (2020). Getting to know me better: An fMRI study of intimate and superficial self-disclosure to friends during adolescence. *Journal of Personality and Social Psychology*, 118(5), 885–899. [10.1037/pspa0000182](https://doi.org/10.1037/pspa0000182)
 
 >Ludwig, R. M., **Flournoy, J. C.**, & Berkman, E. T. (2019).
 Inequality in personality and temporal discounting across socioeconomic

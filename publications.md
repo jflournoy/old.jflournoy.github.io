@@ -9,7 +9,7 @@ title: Publications
 2. <a href="#journal-articles">Journal articles</a>
 3. <a href="#miscellaneous-contributions">Miscellaneous Contributions</a>
 
-{% marginnote "updated" "<small><em>Updated 2020&ndash;07&ndash;18; see [Google Scholar](https://scholar.google.com/citations?user=ZzQlngkAAAAJ&hl=en&oi=ao) for most up to date list.</em></small>" %}{% newthought "Descriptions of notable contributions" %} to each publication appear as sidenotes in the margins. Many contain links (&#8599;) to relevant github repositories. 
+{% marginnote "updated" "<small><em>Updated 2021&ndash;06&ndash;21; see [Google Scholar](https://scholar.google.com/citations?user=ZzQlngkAAAAJ&hl=en&oi=ao) for most up to date list.</em></small>" %}{% newthought "Descriptions of notable contributions" %} to each publication appear as sidenotes in the margins. Many contain links (&#8599;) to relevant github repositories. 
 
 # Pre-publication
 

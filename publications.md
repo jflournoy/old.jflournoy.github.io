@@ -137,6 +137,8 @@ Psych*.
 
 Presentations:
 
+> Flournoy, J. (2021, May). [https://docs.google.com/presentation/d/1kK5H0peMVh0kooBeua3jEgXjXYhvg1qnj3dNF-hHy3Y/edit?usp=sharing](Scientific Practice in Developmental Cognitive Neuroscience). Presented at the Lifespan Informatics and Neuroimaging Center, Department of Psychiatry, University of Pennsylvania Perelman School of Medicine.
+
 >Tutorials on developmental fMRI at [Modeling Developmental Change workshop](https://osf.io/hym23/), Portland, OR (2017).
 
 Data:
